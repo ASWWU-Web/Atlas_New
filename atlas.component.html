@@ -1,0 +1,112 @@
+
+<!-- ASWWU Main Picture -->
+<section id="background_image">
+    <div id="aswwuLogo" class="center-content" style="background-image: url(https://aswwu.com/media/images/atlas/home.jpg);"></div>
+</section>
+
+<!-- About US -->
+<section id="aboutUs">
+  <div class="container">
+    <h1 class="text-center text-uppercase">About Us</h1>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Humbly serving you since 2011, The Atlas is a specialty coffee and tea house located at Walla Walla University and operated by its students. Our focus is crafting some of the highest quality coffee and tea beverages available in the Walla Walla Valley while maintaining a rustic, community based atmosphere. All are invited to read, chat, collaborate, or simply enjoy the space; perfect for a long haul study session or a quick drink with a friend. So whether you are a student or not, drop by, grab a drink, and relax! We think you’ll like it here.</p>
+          <h5><b>Hours</b></h5>
+          <table id="hours">
+            <tr>
+              <td>Mon</td>
+              <td>07:30AM - 08:00PM</td>
+            </tr>
+            <tr>
+              <td>Tue</td>
+              <td>07:30AM - 10:30AM</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>12:00PM - 08:00PM</td>
+            </tr>
+            <tr>
+              <td>Wed</td>
+              <td>07:30AM - 08:00PM</td>
+            </tr>
+            <tr>
+              <td>Thu</td>
+              <td>07:30AM - 08:00PM</td>
+            </tr>
+            <tr>
+              <td>Fri</td>
+              <td>07:30AM - 12:00PM</td>
+            </tr>
+            <tr>
+              <td>Sat</td>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <td>Sun</td>
+              <td>09:00AM - 08:00PM</td>
+            </tr>
+          </table>
+          <small>The Atlas is not open during summer quarter or during interims.</small>
+          <p>
+            You can book the atlas for your group by filling out the <a href="https://wwuform.formstack.com/forms/atlas_booking">Atlas Booking Form</a>.
+          </p>
+      </div>
+      <div class="col-md-6 full_height">
+        <div #map style="width:100%;height:500px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team -->
+<section id="team"> <!--{{atlasEmployees[0].username}} -->
+  <h1 class="text-center text-uppercase">Our Baristas</h1>
+  <hr>
+  <div class="text-center">
+    <div  id='baristas' class="row container mx-auto">
+      <div *ngFor="let employee of atlasEmployees" class="person col col-md-4">
+        <a href="https://aswwu.com/mask/profile/{{employee.username}}/1920" target="_blank">
+          <div class="img-container">
+            <img src="https://aswwu.com/media/img-sm/{{employee.photoURL}}" alt="{{employee.full_name}}">
+          </div>
+          <h3 class="name">{{employee.full_name}}</h3>
+          <div class="position">{{employee.role}}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Parallax Coffee Cup -->
+<div id="gear" class="parallax-window center-content" style="background-image: url('https://aswwu.com/media/images/atlas/Cups.jpg'); background-size:cover;">
+</div>
+
+<!-- Open Forum Section -->
+<section id="open-forum">
+  <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+  <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+  <ul class="juicer-feed" data-feed-id="the_atlas">
+    <h1 class="referral">
+      <a href="https://www.juicer.io">Powered by Juicer.io</a>
+    </h1>
+  </ul>
+</section>
+
+<!-- Parallax Hanging Sign -->
+<div id="gear" class="parallax-window center-content" style="background-image: url('https://aswwu.com/media/images/atlas/Hanging-Sign.JPG'); background-size:cover;">
+</div>
+
+<!-- About US -->
+<section id="aswwu">
+  <div class="container">
+    <h1 class="text-center text-uppercase">ASWWU</h1>
+    <hr>
+    <h5 class="text-center text-uppercase">We are aswwu, and so are you.</h5><br />
+    <div class="row ">
+      <div class="col-md-6 offset-md-3">
+        <p>ASWWU is the Associated Students of Walla Walla University, and aims to improve the quality of life for all students on the WWU campus.</p>
+      </div>
+    </div>
+  </div>
+</section>
